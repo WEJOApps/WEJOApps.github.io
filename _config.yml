@@ -1,0 +1,54 @@
+# Site wide configuration
+
+title: I AM HAYDEN
+locale: en_US
+description: 
+logo: site-logo.png
+search: true
+url: http://localhost:4000
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..2
+  use_coderay: false
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+
+
+# Site owner
+owner:
+  name: Hayden Moon
+  avatar: https://raw.githubusercontent.com/mettmoon/mettmoon.github.io/master/images/me.png
+  email: ys.qwerty700@gmail.com
+  disqus-shortname:
+  twitter: mettmoon
+  facebook: yousung.moon
+  github: mettmoon
+  stackexchange: http://stackoverflow.com/users/2552152/hayden-moon
+  linkedin: #username
+  instagram: dos3d2d
+  flickr: #username
+  tumblr: #username
+  pinterest: #username
+  weibo: #userid
+  google:
+    plus: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
