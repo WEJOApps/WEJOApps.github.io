@@ -1,0 +1,172 @@
+{
+  "en": {
+    "name": "English",
+    "og_locale": "en_US",
+    "language_label": "Language",
+    "nav": {
+      "apps": "Apps",
+      "contact": "Contact",
+      "support": "Support",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use"
+    },
+    "pages": {
+      "home": {
+        "title": "WEJOApps",
+        "description": "Official site of WEJOApps"
+      },
+      "courseboy": {
+        "title": "CourseBoy",
+        "description": "An iOS app for viewing GPX and TCX courses on a map with elevation and a cue sheet, and recording your activities"
+      },
+      "courseboy/support": {
+        "title": "Support | CourseBoy",
+        "description": "CourseBoy contact and frequently asked questions"
+      },
+      "courseboy/privacy": {
+        "title": "Privacy Policy | CourseBoy",
+        "description": "Privacy policy of the CourseBoy app"
+      },
+      "courseboy/terms": {
+        "title": "Terms of Use | CourseBoy",
+        "description": "Terms of use of the CourseBoy app"
+      }
+    }
+  },
+  "ko": {
+    "name": "한국어",
+    "og_locale": "ko_KR",
+    "language_label": "언어",
+    "nav": {
+      "apps": "Apps",
+      "contact": "Contact",
+      "support": "지원",
+      "privacy": "개인정보 처리방침",
+      "terms": "이용약관"
+    },
+    "pages": {
+      "home": {
+        "title": "WEJOApps",
+        "description": "WEJOApps 공식 사이트"
+      },
+      "courseboy": {
+        "title": "CourseBoy",
+        "description": "GPX·TCX 코스를 지도와 고도, 큐시트로 확인하고 활동을 기록하는 iOS 앱"
+      },
+      "courseboy/support": {
+        "title": "지원 | CourseBoy",
+        "description": "CourseBoy 앱 문의와 자주 묻는 질문"
+      },
+      "courseboy/privacy": {
+        "title": "개인정보 처리방침 | CourseBoy",
+        "description": "CourseBoy 앱의 개인정보 처리방침"
+      },
+      "courseboy/terms": {
+        "title": "이용약관 | CourseBoy",
+        "description": "CourseBoy 앱의 이용약관"
+      }
+    }
+  },
+  "ja": {
+    "name": "日本語",
+    "og_locale": "ja_JP",
+    "language_label": "言語",
+    "nav": {
+      "apps": "Apps",
+      "contact": "Contact",
+      "support": "サポート",
+      "privacy": "プライバシーポリシー",
+      "terms": "利用規約"
+    },
+    "pages": {
+      "home": {
+        "title": "WEJOApps",
+        "description": "WEJOApps 公式サイト"
+      },
+      "courseboy": {
+        "title": "CourseBoy",
+        "description": "GPX・TCXコースを地図と標高、キューシートで確認し、アクティビティを記録するiOSアプリ"
+      },
+      "courseboy/support": {
+        "title": "サポート | CourseBoy",
+        "description": "CourseBoyのお問い合わせとよくある質問"
+      },
+      "courseboy/privacy": {
+        "title": "プライバシーポリシー | CourseBoy",
+        "description": "CourseBoyアプリのプライバシーポリシー"
+      },
+      "courseboy/terms": {
+        "title": "利用規約 | CourseBoy",
+        "description": "CourseBoyアプリの利用規約"
+      }
+    }
+  },
+  "de": {
+    "name": "Deutsch",
+    "og_locale": "de_DE",
+    "language_label": "Sprache",
+    "nav": {
+      "apps": "Apps",
+      "contact": "Kontakt",
+      "support": "Support",
+      "privacy": "Datenschutz",
+      "terms": "Nutzungsbedingungen"
+    },
+    "pages": {
+      "home": {
+        "title": "WEJOApps",
+        "description": "Offizielle Website von WEJOApps"
+      },
+      "courseboy": {
+        "title": "CourseBoy",
+        "description": "Eine iOS-App, die GPX- und TCX-Strecken mit Karte, Höhenprofil und Cue-Sheet anzeigt und Aktivitäten aufzeichnet"
+      },
+      "courseboy/support": {
+        "title": "Support | CourseBoy",
+        "description": "Kontakt und häufige Fragen zu CourseBoy"
+      },
+      "courseboy/privacy": {
+        "title": "Datenschutzerklärung | CourseBoy",
+        "description": "Datenschutzerklärung der App CourseBoy"
+      },
+      "courseboy/terms": {
+        "title": "Nutzungsbedingungen | CourseBoy",
+        "description": "Nutzungsbedingungen der App CourseBoy"
+      }
+    }
+  },
+  "fr": {
+    "name": "Français",
+    "og_locale": "fr_FR",
+    "language_label": "Langue",
+    "nav": {
+      "apps": "Apps",
+      "contact": "Contact",
+      "support": "Assistance",
+      "privacy": "Confidentialité",
+      "terms": "Conditions d'utilisation"
+    },
+    "pages": {
+      "home": {
+        "title": "WEJOApps",
+        "description": "Site officiel de WEJOApps"
+      },
+      "courseboy": {
+        "title": "CourseBoy",
+        "description": "Une app iOS pour afficher des parcours GPX et TCX sur une carte avec le profil d'altitude et la feuille de route, et enregistrer vos activités"
+      },
+      "courseboy/support": {
+        "title": "Assistance | CourseBoy",
+        "description": "Contact et questions fréquentes sur CourseBoy"
+      },
+      "courseboy/privacy": {
+        "title": "Politique de confidentialité | CourseBoy",
+        "description": "Politique de confidentialité de l'app CourseBoy"
+      },
+      "courseboy/terms": {
+        "title": "Conditions d'utilisation | CourseBoy",
+        "description": "Conditions d'utilisation de l'app CourseBoy"
+      }
+    }
+  }
+}

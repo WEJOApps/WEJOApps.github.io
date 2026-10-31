@@ -1,0 +1,91 @@
+    <h1>Politique de confidentialité de CourseBoy</h1>
+    <p class="doc-meta">Date d'entrée en vigueur : 31 octobre 2026</p>
+
+    <p>CourseBoy (l'« App ») est une app iOS qui permet d'afficher des parcours GPX et TCX sur une carte avec le profil d'altitude et la feuille de route, et d'enregistrer vos activités. L'App s'utilise sans inscription ni connexion, et le développeur ne reçoit aucune information permettant de vous identifier, comme votre nom, votre adresse e-mail ou votre numéro de téléphone. Les parcours, les activités enregistrées et votre position sont stockés uniquement sur votre appareil et ne sont jamais envoyés aux serveurs du développeur. Le développeur n'exploite aucun serveur destiné à les stocker.</p>
+    <p>Cette politique explique quelles informations l'App traite sur votre appareil, dans quels cas des informations quittent votre appareil et comment vous pouvez les contrôler.</p>
+
+    <h2 id="permissions">1. Autorisations utilisées par l'App et leur finalité</h2>
+    <p>L'App ne demande chacune des autorisations ci-dessous que lorsque vous utilisez la fonction concernée. Si vous la refusez, tout le reste continue de fonctionner, et vous pouvez la modifier à tout moment dans iOS, sous <strong>Réglages › CourseBoy</strong>.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Autorisation</th><th>Utilisée pour</th><th>Finalité</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Position (Lorsque l'app est active)</td><td>Carte, suivi de parcours, enregistrement d'activités</td><td>Affiche votre position actuelle sur la carte, détermine votre position sur le parcours pour vous indiquer la distance restante et le prochain point de parcours, et enregistre le tracé de votre activité.</td></tr>
+          <tr><td>Position (Toujours)</td><td>Suivi de parcours, enregistrement d'activités</td><td>Maintient à jour la progression sur le parcours, le guidage vocal et les Activités en direct, et poursuit l'enregistrement lorsque l'écran est éteint ou que vous utilisez une autre app. L'App n'utilise pas la position en arrière-plan lorsque vous ne suivez pas de parcours et n'enregistrez pas d'activité.</td></tr>
+          <tr><td>Position exacte</td><td>Suivi de parcours</td><td>Peut demander la position exacte pendant le suivi afin de déterminer précisément votre position sur le parcours.</td></tr>
+          <tr><td>Mouvements et forme (baromètre)</td><td>Enregistrement d'activités</td><td>Mesure plus précisément les montées et les descentes à partir des variations de pression atmosphérique.</td></tr>
+          <tr><td>Ajout à Photos</td><td>Écran de partage</td><td>Enregistre dans votre photothèque les images de parcours et d'activités créées sur l'écran de partage. L'App ne lit pas les photos de votre photothèque.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>L'App n'accède pas à vos contacts, à l'appareil photo, au micro, à Santé (HealthKit) ni à l'identifiant publicitaire (IDFA).</p>
+
+    <h2 id="on-device">2. Informations stockées uniquement sur votre appareil</h2>
+    <p>Les informations suivantes sont stockées uniquement dans l'espace de stockage de l'App sur votre appareil et ne sont pas transmises au développeur.</p>
+    <ul>
+      <li><strong>Parcours</strong> : fichiers GPX et TCX que vous importez vous-même via l'app Fichiers, iCloud Drive, AirDrop ou la feuille de partage d'une autre app, ainsi que leur contenu</li>
+      <li><strong>Activités enregistrées</strong> : positions reçues pendant l'enregistrement (latitude, longitude, altitude, vitesse, heure), altitude barométrique, résumés tels que la distance et la durée, et titres et notes que vous saisissez. Les activités terminées sont enregistrées en fichiers FIT, également visibles dans l'app Fichiers sous « Sur mon iPhone › CourseBoy ».</li>
+      <li><strong>Activités importées</strong> : fichiers FIT que vous importez</li>
+      <li><strong>Réglages</strong> : réglages de l'App tels que les unités, le type de carte, le guidage vocal et la pause automatique</li>
+      <li><strong>Journaux de diagnostic</strong> : diagnostics de plantages et de blocages ainsi que mesures de performances et de batterie fournis par iOS (MetricKit). Ils restent sur votre appareil et ne le quittent que si vous les choisissez et les partagez vous-même depuis <strong>Réglages › Signaler un problème › Journaux de diagnostic</strong>.</li>
+    </ul>
+    <p>Le guidage vocal utilise la synthèse vocale d'iOS sur l'appareil, et les Activités en direct sont mises à jour uniquement sur l'appareil (aucun serveur de notifications push n'est utilisé).</p>
+    <p>Si vous avez activé la sauvegarde iCloud ou les sauvegardes sur ordinateur, les informations ci-dessus peuvent être incluses dans la sauvegarde de votre appareil iOS. Ces sauvegardes sont traitées par Apple ou par votre ordinateur, et le développeur n'y a pas accès.</p>
+
+    <h2 id="off-device">3. Informations qui quittent votre appareil</h2>
+
+    <h3 id="crashlytics">3.1 Rapports de plantage (Firebase Crashlytics)</h3>
+    <p>Lorsque l'App plante, elle envoie un rapport à Firebase Crashlytics, exploité par Google LLC, afin d'en trouver et d'en corriger la cause.</p>
+    <ul>
+      <li><strong>Informations envoyées</strong> : emplacement dans le code au moment du plantage (trace de pile), modèle de l'appareil, version d'iOS, version de l'App, heure du plantage, état de l'appareil comme la mémoire et le stockage, et un identifiant d'installation généré aléatoirement pour chaque installation de l'App. Votre adresse IP est transmise à Google lors de l'envoi.</li>
+      <li><strong>Informations non envoyées</strong> : position, parcours, activités enregistrées, titres et notes que vous saisissez</li>
+      <li><strong>Durée de conservation</strong> : Crashlytics conserve les rapports et les identifiants d'installation pendant 90 jours, puis les supprime.</li>
+      <li><strong>Destinataire et lieu de transfert</strong> : Google LLC (centres de données de Google, notamment aux États-Unis). Les rapports sont envoyés via une connexion chiffrée la prochaine fois que vous ouvrez l'App après un plantage.</li>
+      <li><strong>Comment le désactiver</strong> : désactivez <strong>Réglages › Signaler un problème › Envoyer les rapports de plantage</strong> dans l'App ; aucun rapport ne sera plus envoyé.</li>
+    </ul>
+    <p>Ces rapports ne servent pas à vous identifier et ne sont utilisés ni pour la publicité ni pour le suivi. Vous pouvez consulter la façon dont Google traite ces données dans les <a href="https://firebase.google.com/support/privacy">informations de confidentialité de Firebase</a>.</p>
+
+    <h3 id="apple-maps">3.2 Plans d'Apple</h3>
+    <p>Les cartes de l'App (Standard, Mixte, Satellite) et celles des images de partage utilisent MapKit d'Apple. Les requêtes servant à afficher la carte sont traitées par Apple conformément à la <a href="https://www.apple.com/fr/legal/privacy/">Politique de confidentialité d'Apple</a> et aux mentions légales affichées en bas de la carte.</p>
+
+    <h3 id="user-sharing">3.3 Lorsque vous partagez vous-même</h3>
+    <p>Lorsque vous utilisez la feuille de partage pour envoyer des images de parcours ou d'activités, des fichiers FIT, des sauvegardes d'activités (zip) ou des journaux de diagnostic à une autre app ou à une autre personne, le contenu est transmis au destinataire que vous avez choisi, et son traitement ultérieur relève des politiques de ce dernier. Les fichiers d'activités et les sauvegardes contiennent votre tracé (position) : soyez prudent lorsque vous les partagez.</p>
+
+    <h2 id="third-parties">4. Partage avec des tiers et suivi</h2>
+    <p>En dehors des cas décrits à la section 3, le développeur ne communique ni ne vend d'informations à des tiers. L'App ne contient aucun outil publicitaire ni outil d'analyse, et ne vous suit pas en combinant des informations avec des données collectées par les apps ou sites web d'autres entreprises.</p>
+
+    <h2 id="retention">5. Conservation et suppression</h2>
+    <ul>
+      <li>Les parcours et activités stockés sur votre appareil y restent jusqu'à ce que vous les supprimiez dans l'App ou que vous supprimiez l'App. La suppression de l'App efface tout le contenu de son espace de stockage (à l'exception des copies présentes dans les sauvegardes de l'appareil iOS).</li>
+      <li>Les journaux de diagnostic sont supprimés en commençant par les plus anciens afin de ne garder que les plus récents, et vous pouvez aussi les supprimer vous-même dans <strong>Réglages › Signaler un problème › Journaux de diagnostic</strong>.</li>
+      <li>Les rapports Crashlytics sont supprimés au bout de 90 jours, comme indiqué en 3.1.</li>
+    </ul>
+
+    <h2 id="rights">6. Vos droits</h2>
+    <p>Comme le développeur ne détient aucune information permettant de vous identifier, vous pouvez consulter, corriger et supprimer vous-même dans l'App les informations stockées sur votre appareil. Si vous souhaitez la suppression d'un rapport envoyé à Crashlytics ou si vous avez des questions sur cette politique, contactez-nous à l'adresse ci-dessous. Nous indiquer la version de l'App et l'heure approximative du plantage nous aide à retrouver le rapport.</p>
+
+    <h2 id="security">7. Mesures de sécurité</h2>
+    <ul>
+      <li>Les informations sont conservées sur votre appareil plutôt que centralisées sur les serveurs du développeur. Les données de l'appareil sont protégées par la Protection des données d'iOS (chiffrement de l'appareil).</li>
+      <li>Toute requête quittant l'appareil utilise une connexion chiffrée (HTTPS).</li>
+      <li>Les informations qui quittent l'appareil sont limitées au strict nécessaire pour chaque fonction.</li>
+    </ul>
+
+    <h2 id="children">8. Données des enfants</h2>
+    <p>L'App ne s'adresse pas aux enfants de moins de 14 ans et ne collecte pas sciemment de données personnelles concernant des enfants.</p>
+
+    <h2 id="contact">9. Responsable de la protection des données et contact</h2>
+    <ul>
+      <li>Responsable de la protection des données : le développeur de CourseBoy</li>
+      <li>E-mail : {{email}}</li>
+    </ul>
+    <p>Pour signaler une atteinte à la vie privée ou obtenir des conseils, vous pouvez contacter les organismes coréens suivants.</p>
+    <ul>
+      <li>Centre de signalement des atteintes aux données personnelles (<a href="https://privacy.kisa.or.kr">privacy.kisa.or.kr</a> / 118 depuis la Corée)</li>
+      <li>Comité de médiation des litiges relatifs aux données personnelles (<a href="https://www.kopico.go.kr">www.kopico.go.kr</a> / 1833-6972)</li>
+    </ul>
+
+    <h2 id="changes">10. Modifications de cette politique</h2>
+    <p>Si l'évolution des fonctions de l'App modifie les informations traitées, nous mettrons à jour cette politique et publierons les modifications et leur date d'entrée en vigueur sur cette page. Les modifications importantes seront également mentionnées dans les notes de mise à jour de l'App.</p>

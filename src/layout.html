@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="$lang">
+<head>
+  $generated_note
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>$title</title>
+  <meta name="description" content="$description">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)">
+$head_extra
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="$logo_href">$logo</a>
+      <div class="header-actions">
+$nav
+$lang_menu
+      </div>
+    </div>
+  </header>
+
+  <main$main_attr>
+$content
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> <a href="$home_href">WEJOApps</a></p>
+    </div>
+  </footer>
+</body>
+</html>

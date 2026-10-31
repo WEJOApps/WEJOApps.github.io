@@ -88,11 +88,24 @@ h3 {
   border-bottom: 1px solid var(--color-border);
 }
 
+/* Wraps onto two lines when the nav doesn't fit (long labels in some languages) */
 .site-header .container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  height: 56px;
+  min-height: 56px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  column-gap: 24px;
+  row-gap: 4px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: auto;
 }
 
 .logo {
@@ -107,7 +120,9 @@ h3 {
 
 .site-nav {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 4px;
 }
 
 .site-nav a {
@@ -121,19 +136,79 @@ h3 {
   }
 
   .site-header .container {
-    flex-wrap: wrap;
-    height: auto;
-    min-height: 56px;
     padding-top: 12px;
     padding-bottom: 12px;
-    column-gap: 16px;
-    row-gap: 4px;
+  }
+
+  .header-actions {
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px;
   }
 
   .site-nav {
-    gap: 14px;
+    column-gap: 14px;
     font-size: 0.875rem;
   }
+}
+
+/* ---------- Language menu ---------- */
+.lang-menu {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.lang-menu summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 4px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  user-select: none;
+}
+
+.lang-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.lang-menu summary:hover,
+.lang-menu[open] summary {
+  color: var(--color-text);
+}
+
+.lang-menu ul {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  z-index: 20;
+  min-width: 140px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.lang-menu li a {
+  display: block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: var(--color-text);
+}
+
+.lang-menu li a:hover {
+  background: var(--color-surface);
+  text-decoration: none;
+}
+
+.lang-menu li a[aria-current] {
+  font-weight: 600;
+  color: var(--color-accent);
 }
 
 .site-nav a:hover {
@@ -292,7 +367,7 @@ h3 {
 }
 
 .not-found {
-  min-height: 100vh;
+  min-height: 60vh;
   display: grid;
   place-items: center;
   text-align: center;
@@ -300,4 +375,13 @@ h3 {
 
 .not-found h1 {
   font-size: 4rem;
+}
+
+.lang-home-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 16px;
+  padding: 0;
+  list-style: none;
 }

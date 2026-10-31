@@ -1,0 +1,91 @@
+    <h1>CourseBoy Privacy Policy</h1>
+    <p class="doc-meta">Effective date: October 31, 2026</p>
+
+    <p>CourseBoy (the "App") is an iOS app for viewing GPX and TCX courses on a map with elevation and a cue sheet, and recording your activities. The App works without signing up or logging in, and the developer does not receive information that identifies you, such as your name, email address, or phone number. Courses, activity records, and location are all stored only on your device and are never sent to the developer's servers. The developer does not operate any server to store them.</p>
+    <p>This policy explains what information the App handles on your device, when information leaves your device, and how you can control it.</p>
+
+    <h2 id="permissions">1. Permissions the App uses and why</h2>
+    <p>The App asks for each permission below only when you use the feature that needs it. If you don't allow a permission, everything except that feature keeps working, and you can change it at any time in iOS <strong>Settings › CourseBoy</strong>.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Permission</th><th>Used for</th><th>Purpose</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Location (While Using the App)</td><td>Map, course tracking, activity recording</td><td>Shows your current location on the map, finds your position on the course to tell you the remaining distance and the next course point, and records your activity route.</td></tr>
+          <tr><td>Location (Always)</td><td>Course tracking, activity recording</td><td>Keeps course progress, voice guidance, and Live Activities up to date and continues recording while the screen is off or you are using another app. The App does not use location in the background when you are not tracking or recording.</td></tr>
+          <tr><td>Precise Location</td><td>Course tracking</td><td>May request precise location while tracking to find your exact position on the course.</td></tr>
+          <tr><td>Motion &amp; Fitness (barometer)</td><td>Activity recording</td><td>Uses changes in air pressure to measure climbs and descents more accurately.</td></tr>
+          <tr><td>Add to Photos</td><td>Share screen</td><td>Saves course and activity images made on the share screen to your photo library. The App does not read photos in your library.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>The App does not access your contacts, camera, microphone, Health (HealthKit), or advertising identifier (IDFA).</p>
+
+    <h2 id="on-device">2. Information stored only on your device</h2>
+    <p>The following information is stored only in the App's storage on your device and is not sent to the developer.</p>
+    <ul>
+      <li><strong>Courses</strong>: GPX and TCX files you import yourself through the Files app, iCloud Drive, AirDrop, or another app's share sheet, and the information in them</li>
+      <li><strong>Activity records</strong>: Locations received while recording (latitude, longitude, altitude, speed, time), barometric altitude, summaries such as distance and time, and titles and notes you enter. Finished activities are saved as FIT files, which you can also see in the Files app under "On My iPhone › CourseBoy".</li>
+      <li><strong>Imported activities</strong>: FIT files you import</li>
+      <li><strong>Settings</strong>: App settings such as units, map type, voice guidance, and auto-pause</li>
+      <li><strong>Diagnostic logs</strong>: Crash and hang diagnostics and performance and battery metrics delivered by iOS (MetricKit). They are kept only on your device and leave it only when you choose and share them yourself from <strong>Settings › Problem Reporting › Diagnostic Logs</strong>.</li>
+    </ul>
+    <p>Voice guidance uses iOS on-device speech synthesis, and Live Activities are updated only on your device (no push server is used).</p>
+    <p>If you have iCloud Backup or computer backups turned on, the information above may be included in your iOS device backup. Those backups are handled by Apple or your computer, and the developer cannot access them.</p>
+
+    <h2 id="off-device">3. Information that leaves your device</h2>
+
+    <h3 id="crashlytics">3.1 Crash reports (Firebase Crashlytics)</h3>
+    <p>When the App crashes, it sends a report to Firebase Crashlytics, operated by Google LLC, so the cause can be found and fixed.</p>
+    <ul>
+      <li><strong>What is sent</strong>: The code location at the time of the crash (stack trace), device model, iOS version, App version, time of the crash, device state such as memory and storage, and an installation identifier randomly generated for each App installation. Your IP address is passed to Google in the course of transmission.</li>
+      <li><strong>What is not sent</strong>: Location, courses, activity records, and titles or notes you enter</li>
+      <li><strong>Retention</strong>: Crashlytics keeps reports and installation identifiers for 90 days and then deletes them.</li>
+      <li><strong>Where it goes</strong>: Google LLC (Google data centers in the United States and elsewhere). Reports are sent over an encrypted connection the next time you open the App after a crash.</li>
+      <li><strong>How to turn it off</strong>: Turn off <strong>Settings › Problem Reporting › Send Crash Reports</strong> in the App, and no further reports will be sent.</li>
+    </ul>
+    <p>These reports are not used to identify you, and are not used for advertising or tracking. You can read how Google handles this data in the <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>.</p>
+
+    <h3 id="apple-maps">3.2 Apple Maps</h3>
+    <p>The maps in the App (Standard, Hybrid, Satellite) and the maps in share images use Apple's MapKit. Requests to draw the map are handled by Apple under the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a> and the legal notices at the bottom of the map.</p>
+
+    <h3 id="user-sharing">3.3 When you share something yourself</h3>
+    <p>When you use the share sheet to send course or activity images, FIT files, activity backups (zip), or diagnostic logs to another app or person, the content goes where you chose, and its handling after that follows the recipient's policies. Activity files and backups contain your route (location), so take care when sharing them.</p>
+
+    <h2 id="third-parties">4. Sharing with third parties and tracking</h2>
+    <p>Except as described in section 3, the developer does not provide or sell information to third parties. The App contains no advertising or analytics tools, and does not track you by combining information with data collected from other companies' apps or websites.</p>
+
+    <h2 id="retention">5. Retention and deletion</h2>
+    <ul>
+      <li>Courses and activities stored on your device remain until you delete them in the App or delete the App. Deleting the App erases everything in its storage (except copies remaining in iOS device backups).</li>
+      <li>Diagnostic logs are pruned oldest first so that only recent ones remain, and you can also delete them yourself in <strong>Settings › Problem Reporting › Diagnostic Logs</strong>.</li>
+      <li>Crashlytics reports are deleted after 90 days, as described in 3.1.</li>
+    </ul>
+
+    <h2 id="rights">6. Your rights</h2>
+    <p>Because the developer holds no information that identifies you, you can view, correct, and delete the information stored on your device yourself within the App. If you want a report sent to Crashlytics deleted, or have any questions about this policy, please contact us at the address below. Telling us the App version and the approximate time of the crash helps us find the report.</p>
+
+    <h2 id="security">7. Security measures</h2>
+    <ul>
+      <li>Information is kept on your device rather than collected on the developer's servers. Information on the device is protected by iOS Data Protection (device encryption).</li>
+      <li>Every request that leaves the device uses an encrypted connection (HTTPS).</li>
+      <li>Information that leaves the device is limited to what each feature strictly needs.</li>
+    </ul>
+
+    <h2 id="children">8. Children's privacy</h2>
+    <p>The App is not directed at children under 14, and does not knowingly collect personal information from children.</p>
+
+    <h2 id="contact">9. Privacy officer and contact</h2>
+    <ul>
+      <li>Privacy officer: CourseBoy developer</li>
+      <li>Email: {{email}}</li>
+    </ul>
+    <p>If you need to report or get advice about a privacy violation, you can contact the following Korean agencies.</p>
+    <ul>
+      <li>Personal Information Infringement Report Center (<a href="https://privacy.kisa.or.kr">privacy.kisa.or.kr</a> / 118 within Korea)</li>
+      <li>Personal Information Dispute Mediation Committee (<a href="https://www.kopico.go.kr">www.kopico.go.kr</a> / 1833-6972)</li>
+    </ul>
+
+    <h2 id="changes">10. Changes to this policy</h2>
+    <p>If changes to the App's features change the information it handles, we will update this policy and post the changes and the effective date on this page. Significant changes will also be noted in the App's update notes.</p>
