@@ -8,6 +8,10 @@ WEJOApps 정적 사이트 (GitHub Pages). 빌드 도구 없이 순수 HTML/CSS/J
 .
 ├── index.html          # 메인 페이지
 ├── 404.html            # GitHub Pages가 자동으로 사용하는 404 페이지
+├── courseboy/          # CourseBoy 앱 페이지
+│   ├── support/        # 지원 (App Store 지원 URL)
+│   ├── privacy/        # 개인정보 처리방침 (App Store 개인정보 처리방침 URL)
+│   └── terms/          # 이용약관
 ├── assets/
 │   ├── css/style.css   # 공통 스타일 (라이트/다크 모드 토큰)
 │   ├── js/main.js      # 공통 스크립트

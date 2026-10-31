@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>개인정보 처리방침 | CourseBoy</title>
+  <meta name="description" content="CourseBoy 앱의 개인정보 처리방침">
+  <link rel="canonical" href="https://wejoapps.github.io/courseboy/privacy/">
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="/courseboy/">CourseBoy</a>
+      <nav class="site-nav">
+        <a href="/courseboy/support/">지원</a>
+        <a href="/courseboy/privacy/" aria-current="page">개인정보 처리방침</a>
+        <a href="/courseboy/terms/">이용약관</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container doc">
+    <h1>CourseBoy 개인정보 처리방침</h1>
+    <p class="doc-meta">시행일: 2026년 10월 31일</p>
+
+    <p>CourseBoy(이하 "앱")는 GPX·TCX 코스를 지도와 고도, 큐시트로 확인하고 활동을 기록하는 iOS 앱입니다. 앱은 회원 가입이나 로그인 없이 쓰며, 개발자는 이름·이메일·전화번호 같은 개인을 알아볼 수 있는 정보를 받지 않습니다. 코스와 활동 기록, 위치는 모두 사용자의 기기에만 저장되고 개발자의 서버로 보내지 않습니다. 개발자는 이를 저장할 서버를 운영하지 않습니다.</p>
+    <p>이 방침은 앱이 기기에서 어떤 정보를 다루는지, 어떤 경우에 기기 밖으로 정보가 나가는지, 사용자가 이를 어떻게 조절할 수 있는지 설명합니다.</p>
+
+    <h2 id="permissions">1. 앱이 쓰는 권한과 목적</h2>
+    <p>앱은 아래 권한을 해당 기능을 쓸 때만 요청합니다. 허용하지 않아도 그 기능을 뺀 나머지는 쓸 수 있으며, 언제든 iOS <strong>설정 › CourseBoy</strong>에서 바꿀 수 있습니다.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>권한</th><th>쓰는 곳</th><th>목적</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>위치 (앱을 사용하는 동안)</td><td>지도, 코스 추적, 활동 기록</td><td>지도에 현재 위치를 표시하고, 코스 위 현재 지점을 찾아 남은 거리와 다음 코스포인트를 알려 주며, 활동 경로를 기록합니다.</td></tr>
+          <tr><td>위치 (항상)</td><td>코스 추적, 활동 기록</td><td>화면을 끄거나 다른 앱을 쓰는 동안에도 코스 진행 정보, 음성 안내, 라이브 액티비티를 계속 갱신하고 활동 기록을 이어 갑니다. 추적이나 기록을 하지 않을 때는 백그라운드에서 위치를 쓰지 않습니다.</td></tr>
+          <tr><td>정확한 위치</td><td>코스 추적</td><td>코스 위 현재 지점을 정확히 찾기 위해 추적하는 동안 정확한 위치를 요청할 수 있습니다.</td></tr>
+          <tr><td>동작 및 피트니스 (기압계)</td><td>활동 기록</td><td>기압 변화로 오르막·내리막 고도를 더 정확히 잽니다.</td></tr>
+          <tr><td>사진 보관함에 추가</td><td>공유 화면</td><td>공유 화면에서 만든 코스·활동 이미지를 사진 앨범에 저장합니다. 앱은 사진 보관함의 사진을 읽지 않습니다.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>앱은 이 밖에 연락처, 카메라, 마이크, 건강(HealthKit), 광고 식별자(IDFA)에 접근하지 않습니다.</p>
+
+    <h2 id="on-device">2. 기기에만 저장하는 정보</h2>
+    <p>다음 정보는 앱의 저장 공간(기기 안)에만 저장되며 개발자에게 전송되지 않습니다.</p>
+    <ul>
+      <li><strong>코스</strong>: 사용자가 파일 앱, iCloud Drive, AirDrop, 다른 앱의 공유 등으로 직접 가져온 GPX·TCX 파일과 그 정보</li>
+      <li><strong>활동 기록</strong>: 기록 중 받은 위치(위도·경도·고도·속도·시각)와 기압계 고도, 거리·시간 같은 요약, 사용자가 입력한 제목과 메모. 마친 활동은 FIT 파일로 저장되며 파일 앱의 "나의 iPhone › CourseBoy"에서도 볼 수 있습니다.</li>
+      <li><strong>가져온 활동</strong>: 사용자가 가져온 FIT 파일</li>
+      <li><strong>설정</strong>: 단위, 지도 종류, 음성 안내, 자동 일시정지 등 앱 설정</li>
+      <li><strong>지도 타일 캐시</strong>: 아래 3.2의 타일 지도를 다시 받지 않도록 기기에 임시로 저장한 지도 이미지</li>
+      <li><strong>진단 기록</strong>: iOS(MetricKit)가 전해 주는 비정상 종료·멈춤 진단과 성능·배터리 지표. 기기에만 모아 두며, 사용자가 <strong>설정 › 문제 보고 › 진단 기록</strong>에서 직접 골라 공유할 때만 기기 밖으로 나갑니다.</li>
+    </ul>
+    <p>음성 안내는 iOS의 기기 내 음성 합성을 쓰며, 라이브 액티비티는 기기 안에서만 갱신됩니다(푸시 서버를 쓰지 않습니다).</p>
+    <p>사용자가 iCloud 백업이나 컴퓨터 백업을 켜 둔 경우 위 정보는 iOS 기기 백업에 포함될 수 있습니다. 이 백업은 Apple 또는 사용자의 컴퓨터가 처리하며 개발자는 접근할 수 없습니다.</p>
+
+    <h2 id="off-device">3. 기기 밖으로 나가는 정보</h2>
+
+    <h3 id="crashlytics">3.1 비정상 종료 보고 (Firebase Crashlytics)</h3>
+    <p>앱이 비정상 종료되면 원인을 찾아 고치기 위해 Google LLC의 Firebase Crashlytics로 보고를 보냅니다.</p>
+    <ul>
+      <li><strong>보내는 정보</strong>: 비정상 종료 시점의 코드 위치(스택 트레이스), 기기 모델, iOS 버전, 앱 버전, 종료 시각, 메모리·저장 공간 같은 기기 상태, 앱 설치마다 무작위로 만들어지는 설치 식별자. 전송 과정에서 IP 주소가 Google에 전달됩니다.</li>
+      <li><strong>보내지 않는 정보</strong>: 위치, 코스, 활동 기록, 사용자가 입력한 제목·메모</li>
+      <li><strong>보관 기간</strong>: Crashlytics는 보고와 설치 식별자를 90일 동안 보관한 뒤 지웁니다.</li>
+      <li><strong>이전되는 곳</strong>: Google LLC (미국 등 Google의 데이터 센터). 비정상 종료가 일어난 뒤 앱을 다시 실행할 때 암호화된 네트워크로 전송됩니다.</li>
+      <li><strong>끄는 방법</strong>: 앱의 <strong>설정 › 문제 보고 › 비정상 종료 보고 보내기</strong>를 끄면 이후로는 보내지 않습니다.</li>
+    </ul>
+    <p>이 보고는 개인을 알아보는 데 쓰지 않으며, 광고나 사용자 추적에 쓰지 않습니다. Google의 처리 방식은 <a href="https://firebase.google.com/support/privacy">Firebase 개인정보 보호 안내</a>에서 볼 수 있습니다.</p>
+
+    <h3 id="tile-maps">3.2 타일 지도 (OpenStreetMap, CyclOSM)</h3>
+    <p>지도 종류를 <strong>OpenStreetMap</strong> 또는 <strong>CyclOSM (자전거)</strong>로 고르면, 화면에 보이는 영역의 지도 이미지(타일)를 해당 타일 서버에서 받습니다. 기본 지도(표준·하이브리드·위성)에서는 이 요청을 보내지 않습니다.</p>
+    <ul>
+      <li><strong>OpenStreetMap</strong>: OpenStreetMap Foundation이 운영하는 <code>tile.openstreetmap.org</code></li>
+      <li><strong>CyclOSM</strong>: OpenStreetMap France가 운영하는 <code>tile-cyclosm.openstreetmap.fr</code></li>
+    </ul>
+    <p>요청에는 받을 타일의 좌표(지도의 어느 영역을 보는지를 나타냄), 기기의 IP 주소, 앱 이름과 버전을 담은 User-Agent가 포함됩니다. 앱이 GPS 위치 자체를 보내지는 않지만, 현재 위치 주변 지도를 보고 있다면 타일 좌표로 대략적인 위치를 짐작할 수 있습니다. 타일 서버 운영자는 서비스 운영과 악용 방지를 위해 요청 기록을 보관할 수 있으며, 그 처리는 각 운영자의 방침을 따릅니다.</p>
+    <ul>
+      <li><a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap Foundation 개인정보 처리방침</a></li>
+      <li><a href="https://operations.osmfoundation.org/policies/tiles/">OpenStreetMap 타일 사용 정책</a></li>
+    </ul>
+
+    <h3 id="apple-maps">3.3 Apple 지도</h3>
+    <p>표준·하이브리드·위성 지도와 공유 이미지의 지도는 Apple의 MapKit을 씁니다. 지도를 그리기 위한 요청은 Apple이 처리하며 <a href="https://www.apple.com/kr/legal/privacy/">Apple 개인정보 처리방침</a>과 지도 화면 아래쪽 법적 고지를 따릅니다.</p>
+
+    <h3 id="user-sharing">3.4 사용자가 직접 공유하는 경우</h3>
+    <p>사용자가 공유 시트로 코스·활동 이미지, FIT 파일, 활동 백업(zip), 진단 기록을 다른 앱이나 사람에게 보내면, 그 내용은 사용자가 고른 곳으로 전달되고 그 이후의 처리는 받는 쪽의 방침을 따릅니다. 활동 파일과 백업에는 이동 경로(위치)가 들어 있으니 공유할 때 주의하세요.</p>
+
+    <h2 id="third-parties">4. 제3자 제공과 추적</h2>
+    <p>개발자는 위 3장에 적은 경우 말고는 정보를 제3자에게 제공하거나 판매하지 않습니다. 앱에는 광고와 분석(애널리틱스) 도구가 없으며, 다른 회사의 앱이나 웹사이트에서 수집한 정보와 결합해 사용자를 추적하지 않습니다.</p>
+
+    <h2 id="retention">5. 보관 기간과 삭제</h2>
+    <ul>
+      <li>기기에 저장한 코스와 활동은 사용자가 앱에서 지우거나 앱을 삭제할 때까지 남아 있습니다. 앱을 삭제하면 앱의 저장 공간에 있던 정보가 모두 지워집니다(iOS 기기 백업에 남은 사본은 제외).</li>
+      <li>진단 기록은 오래된 것부터 지워 최근 것만 남기며, <strong>설정 › 문제 보고 › 진단 기록</strong>에서 직접 지울 수도 있습니다.</li>
+      <li>지도 타일 캐시는 일정 크기를 넘으면 오래된 것부터 지워지며, iOS가 저장 공간이 부족할 때 지울 수도 있습니다.</li>
+      <li>Crashlytics 보고는 3.1에 적은 대로 90일 뒤 지워집니다.</li>
+    </ul>
+
+    <h2 id="rights">6. 사용자의 권리</h2>
+    <p>개발자는 사용자를 알아볼 수 있는 정보를 갖고 있지 않으므로, 기기에 저장된 정보의 열람·수정·삭제는 사용자가 앱 안에서 직접 할 수 있습니다. Crashlytics로 보낸 보고의 삭제를 원하거나 이 방침에 관해 궁금한 점이 있으면 아래 연락처로 문의해 주세요. 보고를 찾기 위해 앱 버전과 비정상 종료가 일어난 대략의 시각을 알려 주시면 도움이 됩니다.</p>
+
+    <h2 id="security">7. 안전성 확보 조치</h2>
+    <ul>
+      <li>정보를 개발자의 서버에 모으지 않고 기기에 둡니다. 기기 안의 정보는 iOS의 데이터 보호(기기 암호화)를 받습니다.</li>
+      <li>기기 밖으로 보내는 모든 요청은 암호화된 연결(HTTPS)을 씁니다.</li>
+      <li>기기 밖으로 보내는 정보는 기능에 꼭 필요한 만큼으로 줄입니다.</li>
+    </ul>
+
+    <h2 id="children">8. 아동의 개인정보</h2>
+    <p>앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 알면서 수집하지 않습니다.</p>
+
+    <h2 id="contact">9. 개인정보 보호책임자와 문의</h2>
+    <ul>
+      <li>개인정보 보호책임자: CourseBoy 개발자</li>
+      <li>이메일: <a href="mailto:ys_qwerty700@naver.com">ys_qwerty700@naver.com</a></li>
+    </ul>
+    <p>개인정보 침해에 대한 신고나 상담이 필요하면 아래 기관에 문의할 수 있습니다.</p>
+    <ul>
+      <li>개인정보침해신고센터 (<a href="https://privacy.kisa.or.kr">privacy.kisa.or.kr</a> / 국번 없이 118)</li>
+      <li>개인정보분쟁조정위원회 (<a href="https://www.kopico.go.kr">www.kopico.go.kr</a> / 1833-6972)</li>
+    </ul>
+
+    <h2 id="changes">10. 방침의 변경</h2>
+    <p>앱의 기능이 바뀌어 처리하는 정보가 달라지면 이 방침을 고치고, 바뀐 내용과 시행일을 이 페이지에 알립니다. 중요한 변경은 앱 업데이트 내용에도 적습니다.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> WEJOApps</p>
+    </div>
+  </footer>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

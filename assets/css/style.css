@@ -46,6 +46,9 @@ body {
   color: var(--color-text);
   background: var(--color-bg);
   -webkit-font-smoothing: antialiased;
+  /* Break Korean text at spaces, not mid-word */
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 img,
@@ -109,6 +112,28 @@ h3 {
 
 .site-nav a {
   color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .site-header {
+    position: static;
+  }
+
+  .site-header .container {
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 56px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    column-gap: 16px;
+    row-gap: 4px;
+  }
+
+  .site-nav {
+    gap: 14px;
+    font-size: 0.875rem;
+  }
 }
 
 .site-nav a:hover {
@@ -140,6 +165,116 @@ h3 {
   border-top: 1px solid var(--color-border);
   color: var(--color-text-muted);
   font-size: 0.875rem;
+}
+
+.site-nav a[aria-current="page"] {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+/* ---------- Long-form documents (policies, support) ---------- */
+.doc {
+  max-width: 760px;
+  padding-top: 48px;
+  padding-bottom: 64px;
+}
+
+.doc h1 {
+  font-size: clamp(1.75rem, 5vw, 2.25rem);
+}
+
+.doc h2 {
+  font-size: 1.375rem;
+  margin-top: 2.25em;
+  padding-top: 0.25em;
+}
+
+.doc h3 {
+  font-size: 1.125rem;
+  margin-top: 1.75em;
+}
+
+.doc h2,
+.doc h3 {
+  scroll-margin-top: 72px;
+}
+
+.doc-meta {
+  color: var(--color-text-muted);
+  font-size: 0.9375rem;
+}
+
+.doc ul {
+  padding-left: 1.25em;
+}
+
+.doc li + li {
+  margin-top: 0.375em;
+}
+
+.doc code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.875em;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  background: var(--color-surface);
+  overflow-wrap: anywhere;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  margin: 1em 0;
+}
+
+.doc table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.doc th,
+.doc td {
+  padding: 10px 12px;
+  border: 1px solid var(--color-border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.doc th {
+  background: var(--color-surface);
+  white-space: nowrap;
+}
+
+.doc td:first-child {
+  min-width: 8em;
+}
+
+.app-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.app-list a {
+  display: block;
+  padding: 16px 20px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  color: var(--color-text);
+}
+
+.app-list a:hover {
+  background: var(--color-surface);
+  text-decoration: none;
+}
+
+.app-list strong {
+  display: block;
+}
+
+.app-list span {
+  color: var(--color-text-muted);
+  font-size: 0.9375rem;
 }
 
 .not-found {
