@@ -12,6 +12,7 @@ other languages get one (/ko/courseboy/privacy/).
 
 Content placeholders:
     {{url:<page key>}}  link to that page in the same language
+    {{url:<lang>:<page key>}}  link to that page in a specific language
     {{email}}           contact email as a mailto link
     {{app_store_url}}   CourseBoy App Store page
 """
@@ -59,7 +60,12 @@ def expand(text, lang):
     def repl(match):
         name = match.group(1)
         if name.startswith("url:"):
-            return url_for(lang, name[4:])
+            target = name[4:]
+            # {{url:ko:courseboy/terms}} links to a page in a specific language
+            if target.split(":")[0] in LANGS:
+                target_lang, target = target.split(":", 1)
+                return url_for(target_lang, target)
+            return url_for(lang, target)
         if name == "email":
             return f'<a href="mailto:{EMAIL}">{EMAIL}</a>'
         if name == "app_store_url":
